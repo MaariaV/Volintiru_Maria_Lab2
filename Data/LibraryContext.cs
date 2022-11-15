@@ -19,5 +19,6 @@ namespace Volintiru_Maria_Lab2.Data
             modelBuilder.Entity<Order>().ToTable("Order");
             modelBuilder.Entity<Book>().ToTable("Book");
         }
+        public DbSet<Volintiru_Maria_Lab2.Models.Author> Author { get; set; }
     }
 }
